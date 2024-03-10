@@ -6,8 +6,10 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ClientSIdeBootstrap from "@/components/ClientSIdeBootstrap";
-import Head from "next/head";
+
 import Footer from "@/components/Footer";
+
+import ScrollToTopComponent from "@/components/ScrollToTopComponent";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"], // Specify the weights you want to use
@@ -26,6 +28,9 @@ export default function RootLayout({ children }) {
         <ClientSIdeBootstrap />
         <Navbar />
         {children}
+        <div className="d-none d-md-block">
+          <ScrollToTopComponent />
+        </div>
         <Footer />
       </body>
     </html>

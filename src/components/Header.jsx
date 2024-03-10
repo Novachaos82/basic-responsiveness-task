@@ -4,6 +4,8 @@ import leftSVG from "@/assets/leftSVG.svg";
 import rightSVG from "@/assets/rightSVG.svg";
 import google from "@/assets/google.svg";
 import facebook from "@/assets/facebook.svg";
+import rectangle from "@/assets/header/Rectangle.svg";
+
 import eye from "@/assets/eye.svg";
 import { Lock, LockIcon, LockKeyholeIcon } from "lucide-react";
 
@@ -396,6 +398,32 @@ const Header = () => {
                         style={{ right: "30px", top: "10px" }}
                       />
                     </div>
+                    {/* password strenght */}
+                    <div className="d-flex flex-row align-items-center  justify-content-between ">
+                      <div className="d-flex gap-2 ">
+                        <Image
+                          src={rectangle}
+                          alt="rectangle1"
+                          width={0}
+                          height={0}
+                        />
+                        <Image
+                          src={rectangle}
+                          alt="rectangle2"
+                          width={0}
+                          height={0}
+                        />
+                        <Image
+                          src={rectangle}
+                          alt="rectangle3"
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div style={{ color: "#939CA3 ", fontSize: "10px" }}>
+                        Password strength
+                      </div>
+                    </div>
                     {/* policy*/}
                     <div className="" style={{ fontSize: "12px" }}>
                       By continuing, you agree to our
@@ -446,6 +474,31 @@ const Header = () => {
                         className="position-absolute "
                         style={{ right: "30px", top: "10px" }}
                       />
+                    </div>
+                    <div className="d-flex flex-row align-items-center  justify-content-between ">
+                      <div className="d-flex gap-2 ">
+                        <Image
+                          src={rectangle}
+                          alt="rectangle1"
+                          width={0}
+                          height={0}
+                        />
+                        <Image
+                          src={rectangle}
+                          alt="rectangle2"
+                          width={0}
+                          height={0}
+                        />
+                        <Image
+                          src={rectangle}
+                          alt="rectangle3"
+                          width={0}
+                          height={0}
+                        />
+                      </div>
+                      <div style={{ color: "#939CA3 ", fontSize: "10px" }}>
+                        Password strength
+                      </div>
                     </div>
                     {/* policy*/}
                     <div className="" style={{ fontSize: "12px" }}>
