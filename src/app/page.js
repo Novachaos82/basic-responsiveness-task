@@ -91,8 +91,15 @@ export default function Home() {
                 hobbycue? Go ahead and Add your Own page
               </p>
               <div className="" style={{ minWidth: "100%" }}>
-                <Link href="/AddNew">
-                  <button className="btn btn-outline-primary px-4 py-2">
+                <Link href="/AddNew" className="text-decoration-none ">
+                  <button
+                    className="btn btn-outline-primary px-4 py-2 d-md-none"
+                    style={{ width: "100%" }}
+                  >
+                    Add new
+                  </button>
+
+                  <button className="btn btn-outline-primary px-4 py-2 d-none d-md-block ">
                     Add new
                   </button>
                 </Link>
